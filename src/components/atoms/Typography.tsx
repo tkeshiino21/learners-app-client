@@ -4,7 +4,6 @@ import ds from '../../theme/theme';
 type Heading = {
   color?: string;
   proximity?: string;
-  as?: any;
 };
 export const Heading = styled.h1<Heading>`
   color: ${(props) => props.color};
@@ -47,12 +46,15 @@ export const Heading = styled.h1<Heading>`
   &.primary {
     color: ${ds.brand('main')};
   }
+
+  &.underline {
+    border-bottom: 1px solid ${(props) => props.color};
+  }
 `;
 
 type Text = {
   color?: string;
   proximity?: string;
-  as?: any;
 };
 export const Text = styled.p<Text>`
   color: ${(props) => props.color};

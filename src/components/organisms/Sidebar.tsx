@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from '@emotion/styled';
-import { Button, Wrap, StyledLink } from '../atoms';
+import { Button, Wrap } from '../atoms';
+import Navigation from '../molecules/Navigation';
+import MoreNavigation from '../molecules/MoreNavigation';
+import LogCreate from './LogCreate';
 
 const StyledSidebar = styled.div`
   display: flex;
@@ -99,40 +102,14 @@ const SidebarToggle = styled.nav`
 `;
 
 const Sidebar = () => {
-  const Links = [
-    {
-      name: 'Home',
-      link: '/',
-    },
-    {
-      name: 'About',
-      link: '/about',
-    },
-    {
-      name: 'Search',
-      link: '/search',
-    },
-    {
-      name: 'Event',
-      link: '/event',
-    },
-    {
-      name: 'MyGoal',
-      link: '/mygoal',
-    },
-    {
-      name: 'Plan',
-      link: '/plan',
-    },
-    {
-      name: 'Tips',
-      link: '/tips',
-    },
-    {
-      name: 'Profile',
-      link: '/profile',
-    },
-  ];
+  const [showMore, setShowMore] = useState(false);
+  const showMoreHandler = () => {
+    return setShowMore(!showMore);
+  };
+  const [logCreate, setLogCreate] = useState(false);
+  const logCreateHandler = () => {
+    return setLogCreate(!logCreate);
+  };
 
   return (
     <StyledSidebar>
@@ -141,19 +118,15 @@ const Sidebar = () => {
           <SidebarNav>
             <nav>
               <SidebarToggle />
-              {Links.map((link) => {
-                return (
-                  <List key={link.name}>
-                    <StyledLink to={link.link}>{link.name}</StyledLink>
-                  </List>
-                );
-              })}
-              <List>Show More</List>
+              <Navigation />
+              <List onClick={showMoreHandler}>Show More</List>
+              {showMore && <MoreNavigation onClick={showMoreHandler} />}
             </nav>
             <div>
-              <Button mt="24px" onClick={() => console.log('clicked')}>
-                Action
+              <Button mt="24px" onClick={logCreateHandler}>
+                Create Log
               </Button>
+              {logCreate && <LogCreate onClick={logCreateHandler} />}
             </div>
           </SidebarNav>
         </Wrap>

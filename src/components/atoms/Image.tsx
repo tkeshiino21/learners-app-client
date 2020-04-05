@@ -37,7 +37,7 @@ export const Image = styled.div<Image>`
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 300px;
+    height: 274px;
   }
 
   &.featured {

@@ -4,12 +4,13 @@ import ds from '../../theme/theme';
 type Props = {
   text?: string;
   bg?: string;
-  m?: any;
-  mt?: any;
-  mb?: any;
-  mr?: any;
-  ml?: any;
-  onClick?: any;
+  m?: string;
+  mt?: string;
+  mb?: string;
+  mr?: string;
+  ml?: string;
+  onClick?: () => void;
+  value?: string;
 };
 export const Button = styled.button<Props>`
   box-sizing: border-box;
@@ -75,7 +76,7 @@ export const Button = styled.button<Props>`
     font-size: 1rem;
   }
   &.large {
-    padding: 10px 14px;
+    padding: 10px 16px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;

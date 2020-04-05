@@ -1,7 +1,8 @@
 import React from 'react';
-import PageLayout from '../organisms/PageLayout';
-import { Heading, Text, Wrap, Paper } from '../atoms';
-import pic2 from '../../images/pic2.png';
+import PageLayout from '../../organisms/PageLayout';
+import { Heading, Button, StyledLink, Text, Wrap, Paper } from '../../atoms';
+import pic2 from '../../../images/pic2.png';
+import ds from '../../../theme/theme';
 
 const MyGoal = () => {
   return (
@@ -15,6 +16,20 @@ const MyGoal = () => {
           MyGoal
         </Heading>
         <Text>目標に向けて学習時間の積み上げをサポートします。</Text>
+        <div
+          style={{
+            paddingBottom: '32px',
+            borderBottom: `1px solid ${ds.color('light', '4')}`,
+            width: '100%',
+          }}
+        >
+          <Button className="primary">
+            <StyledLink to="/about">今日の積み上げ</StyledLink>
+          </Button>
+          <Button className="outlined" ml="24px">
+            <StyledLink to="/signup">ゴール設定</StyledLink>
+          </Button>
+        </div>
         <Wrap mt="48px" />
         <Paper
           style={{
@@ -42,7 +57,7 @@ const MyGoal = () => {
           </Wrap>
         </Paper>
         <section>
-          <Wrap mt="32px">
+          <Wrap mt="48px">
             <Heading className="h6" proximity="-4px">
               2020年4月1日の積み上げ
             </Heading>

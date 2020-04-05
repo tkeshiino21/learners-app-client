@@ -2,7 +2,7 @@ import React from 'react';
 import PageLayout from '../organisms/PageLayout';
 import { Heading, Button, Wrap, Input, Label } from '../atoms';
 
-const Profile = () => {
+const ProfileEdit = () => {
   return (
     <PageLayout>
       <Wrap ml="48px" mt="24px" mr="48px" style={{ minHeight: '72vh' }}>
@@ -45,4 +45,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default ProfileEdit;
