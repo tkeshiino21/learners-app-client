@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styled from '@emotion/styled';
 import ds from '../../theme/theme';
 import { StyledNavLink } from '../atoms';
@@ -17,8 +17,13 @@ const List = styled.li`
   }
 `;
 
-const Navigation = () => {
-  const Links = [
+type links = {
+  name: string;
+  link: string;
+};
+
+const Navigation: FC = () => {
+  const links: links[] = [
     {
       name: 'Home',
       link: '/',
@@ -59,7 +64,7 @@ const Navigation = () => {
 
   return (
     <>
-      {Links.map((link) => {
+      {links.map((link) => {
         return (
           <List key={link.name}>
             <StyledNavLink
