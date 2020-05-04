@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from '@emotion/styled';
-import PageLayout from '../../organisms/PageLayout';
+import PageLayout from '../../organisms/layout/PageLayout';
 import ds from '../../../theme/theme';
 import { Heading, Button, Wrap, Paper, Box, Text } from '../../atoms';
 import QuotesCreate from '../../organisms/QuotesCreate';

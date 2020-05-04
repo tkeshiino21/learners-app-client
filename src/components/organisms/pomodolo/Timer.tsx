@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Button } from '../atoms';
+import { Button } from '../../atoms';
 import { secToMMSS } from './secToMMSS';
 
 type Timer = {

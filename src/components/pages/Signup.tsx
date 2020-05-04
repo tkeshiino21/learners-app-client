@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { MdArrowForward } from 'react-icons/md';
-import PageLayout from '../organisms/PageLayout';
+import PageLayout from '../organisms/layout/PageLayout';
 import {
   Heading,
   Wrap,

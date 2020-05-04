@@ -1,5 +1,5 @@
 import React from 'react';
-import PageLayout from '../organisms/PageLayout';
+import PageLayout from '../organisms/layout/PageLayout';
 import { Heading, Button, Wrap, Text } from '../atoms';
 
 const FriendsProfile = () => {

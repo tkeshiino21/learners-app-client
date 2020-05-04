@@ -1,6 +1,6 @@
 import React, { FC, useEffect, useState } from 'react';
-import Timer from '../organisms/Timer';
-import PageLayout from '../organisms/PageLayout';
+import Timer from '../organisms/pomodolo/Timer';
+import PageLayout from '../organisms/layout/PageLayout';
 import { Heading, Wrap, Text } from '../atoms';
 
 const useCountdown = (limit: number): any => {

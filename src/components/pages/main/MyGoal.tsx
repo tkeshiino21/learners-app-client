@@ -1,5 +1,5 @@
 import React from 'react';
-import PageLayout from '../../organisms/PageLayout';
+import PageLayout from '../../organisms/layout/PageLayout';
 import { Heading, Button, StyledLink, Text, Wrap, Paper } from '../../atoms';
 import pic2 from '../../../images/pic2.png';
 import ds from '../../../theme/theme';

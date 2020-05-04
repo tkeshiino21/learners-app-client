@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaTwitter, FaGithub, FaFacebook } from 'react-icons/fa';
 import ds from '../../../theme/theme';
-import PageLayout from '../../organisms/PageLayout';
+import PageLayout from '../../organisms/layout/PageLayout';
 import { Heading, Button, Wrap, Text, StyledLink } from '../../atoms';
 
 const Profile = () => {

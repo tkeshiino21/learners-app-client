@@ -1,5 +1,5 @@
 import React from 'react';
-import PageLayout from '../organisms/PageLayout';
+import PageLayout from '../organisms/layout/PageLayout';
 import { Heading, Flex, Button, Wrap, Input, Label, Text } from '../atoms';
 
 const Contact = () => {

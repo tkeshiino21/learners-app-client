@@ -1,5 +1,5 @@
 import React, { FC, useState, ChangeEvent } from 'react';
-import PageLayout from '../organisms/PageLayout';
+import PageLayout from '../organisms/layout/PageLayout';
 import Member from '../organisms/Member';
 import EventList from '../organisms/EventList';
 import { Heading, Text, Button, Wrap } from '../atoms';

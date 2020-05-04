@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import PageLayout from '../../organisms/PageLayout';
+import PageLayout from '../../organisms/layout/PageLayout';
 import { Wrap, Button, StyledLink, Heading, Text } from '../../atoms';
 
 const CenterContainer = styled.div`

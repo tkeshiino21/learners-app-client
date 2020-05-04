@@ -1,5 +1,5 @@
 import React from 'react';
-import PageLayout from '../organisms/PageLayout';
+import PageLayout from '../organisms/layout/PageLayout';
 import { Heading, Text, Button, Wrap } from '../atoms';
 
 const EventDetail = () => {
